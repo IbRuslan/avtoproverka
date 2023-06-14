@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/avtoproverka/static/css/main.b1eb72c0.css",
-    "main.js": "/avtoproverka/static/js/main.e37c2a74.js",
+    "main.js": "/avtoproverka/static/js/main.f2e017b7.js",
     "static/js/787.66cb4309.chunk.js": "/avtoproverka/static/js/787.66cb4309.chunk.js",
     "static/media/avatar.png": "/avtoproverka/static/media/avatar.d947cb9d0d13765666b6.png",
     "static/media/checked.svg": "/avtoproverka/static/media/checked.0b6a1bcf5d417ff0a947.svg",
     "index.html": "/avtoproverka/index.html",
     "main.b1eb72c0.css.map": "/avtoproverka/static/css/main.b1eb72c0.css.map",
-    "main.e37c2a74.js.map": "/avtoproverka/static/js/main.e37c2a74.js.map",
+    "main.f2e017b7.js.map": "/avtoproverka/static/js/main.f2e017b7.js.map",
     "787.66cb4309.chunk.js.map": "/avtoproverka/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b1eb72c0.css",
-    "static/js/main.e37c2a74.js"
+    "static/js/main.f2e017b7.js"
   ]
 }
