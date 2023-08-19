@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/avtoproverka/static/css/main.2b85f21c.css",
-    "main.js": "/avtoproverka/static/js/main.20b7c419.js",
+    "main.js": "/avtoproverka/static/js/main.8514225b.js",
     "static/js/787.66cb4309.chunk.js": "/avtoproverka/static/js/787.66cb4309.chunk.js",
     "static/media/avatar.png": "/avtoproverka/static/media/avatar.d947cb9d0d13765666b6.png",
     "static/media/200.svg": "/avtoproverka/static/media/200.2b4de1542921864a6ecb8c3301ea4670.svg",
@@ -16,11 +16,11 @@
     "index.html": "/avtoproverka/index.html",
     "static/media/burger.svg": "/avtoproverka/static/media/burger.e4e6b98e4ee0b2dfcd76d02a9eed2e34.svg",
     "main.2b85f21c.css.map": "/avtoproverka/static/css/main.2b85f21c.css.map",
-    "main.20b7c419.js.map": "/avtoproverka/static/js/main.20b7c419.js.map",
+    "main.8514225b.js.map": "/avtoproverka/static/js/main.8514225b.js.map",
     "787.66cb4309.chunk.js.map": "/avtoproverka/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2b85f21c.css",
-    "static/js/main.20b7c419.js"
+    "static/js/main.8514225b.js"
   ]
 }
