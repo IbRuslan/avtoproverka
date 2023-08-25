@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/avtoproverka/static/css/main.df89afdb.css",
-    "main.js": "/avtoproverka/static/js/main.cc582340.js",
+    "main.js": "/avtoproverka/static/js/main.f8e88472.js",
     "static/js/787.66cb4309.chunk.js": "/avtoproverka/static/js/787.66cb4309.chunk.js",
     "static/media/avatar.png": "/avtoproverka/static/media/avatar.d947cb9d0d13765666b6.png",
     "static/media/200.svg": "/avtoproverka/static/media/200.2b4de1542921864a6ecb8c3301ea4670.svg",
@@ -16,11 +16,11 @@
     "index.html": "/avtoproverka/index.html",
     "static/media/burger.svg": "/avtoproverka/static/media/burger.e4e6b98e4ee0b2dfcd76d02a9eed2e34.svg",
     "main.df89afdb.css.map": "/avtoproverka/static/css/main.df89afdb.css.map",
-    "main.cc582340.js.map": "/avtoproverka/static/js/main.cc582340.js.map",
+    "main.f8e88472.js.map": "/avtoproverka/static/js/main.f8e88472.js.map",
     "787.66cb4309.chunk.js.map": "/avtoproverka/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.df89afdb.css",
-    "static/js/main.cc582340.js"
+    "static/js/main.f8e88472.js"
   ]
 }
