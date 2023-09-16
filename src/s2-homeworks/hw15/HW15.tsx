@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import s2 from '../../s1-main/App.module.css'
 import s from './HW15.module.css'
-import axios from 'axios'
+import axios, {AxiosResponse} from 'axios'
 import SuperPagination from './common/c9-SuperPagination/SuperPagination'
 import {useSearchParams} from 'react-router-dom'
 import SuperSort from './common/c10-SuperSort/SuperSort'
@@ -52,10 +52,14 @@ const HW15 = () => {
         getTechs(params)
             .then((res) => {
                 // делает студент
-
-                // сохранить пришедшие данные
-
+                // Сохранить пришедшие данные
+                if (res) {
+                    setTotalCount(res.data.totalCount);
+                    // сохранить пришедшие данные
+                    setTechs(res.data.techs);
+                }
                 //
+                setLoading(false)
             })
     }
 
@@ -69,6 +73,10 @@ const HW15 = () => {
         // setSearchParams(
 
         //
+        setPage(newPage);
+        setCount(newCount);
+        sendQuery({ page: newPage, count: newCount });
+        setSearchParams({ page: `${newPage}`, count: `${newCount}` });
     }
 
     const onChangeSort = (newSort: string) => {
@@ -79,7 +87,10 @@ const HW15 = () => {
 
         // sendQuery(
         // setSearchParams(
-
+        setSort(newSort);
+        setPage(1); // При сортировке сбрасываем на 1 страницу
+        sendQuery({ page: 1, count });
+        setSearchParams({ page: `${1}`, count: `${count}` })
         //
     }
 
