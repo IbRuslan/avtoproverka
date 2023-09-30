@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import s2 from '../../s1-main/App.module.css'
 import s from './HW15.module.css'
-import axios, {AxiosResponse} from 'axios'
+import axios from 'axios'
 import SuperPagination from './common/c9-SuperPagination/SuperPagination'
 import {useSearchParams} from 'react-router-dom'
 import SuperSort from './common/c10-SuperSort/SuperSort'
@@ -47,7 +47,7 @@ const HW15 = () => {
     const [searchParams, setSearchParams] = useSearchParams()
     const [techs, setTechs] = useState<TechType[]>([])
 
-    const sendQuery = (params: any) => {
+    const sendQuery = (params: ParamsType) => {
         setLoading(true)
         getTechs(params)
             .then((res) => {
@@ -75,7 +75,7 @@ const HW15 = () => {
         //
         setPage(newPage);
         setCount(newCount);
-        sendQuery({ page: newPage, count: newCount });
+        sendQuery({ sort: sort, page: newPage, count: newCount });
         setSearchParams({ page: `${newPage}`, count: `${newCount}` });
     }
 
@@ -89,14 +89,14 @@ const HW15 = () => {
         // setSearchParams(
         setSort(newSort);
         setPage(1); // При сортировке сбрасываем на 1 страницу
-        sendQuery({ page: 1, count });
+        sendQuery({ sort: newSort, page, count });
         setSearchParams({ page: `${1}`, count: `${count}` })
         //
     }
 
     useEffect(() => {
         const params = Object.fromEntries(searchParams)
-        sendQuery({page: params.page, count: params.count})
+        sendQuery({sort, page, count})
         setPage(+params.page || 1)
         setCount(+params.count || 4)
     }, [])
